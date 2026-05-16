@@ -1,31 +1,51 @@
+import { motion } from "framer-motion";
+
 import Section from "../../components/ui/Section/Section";
+import Button from "../../components/ui/Button/Button"
+
+import { fadeUp } from "../../animations/fade";
+import { staggerContainer } from "../../animations/stagger";
 
 import styles from "./Hero.module.scss";
 
 export default function Hero() {
     return (
         <Section>
-            <div className={styles.hero}>
+            <motion.div 
+                className={styles.hero}
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+            >
                 <div className={styles.content}>
-                    <span className={styles.badge}>
+                    <motion.span 
+                        className={styles.badge}
+                        variants={fadeUp}
+                    >
+                        <span className={styles.badge_dot}></span>
                         Disponible pour vos projets web
-                    </span>
+                    </motion.span>
 
-                    <h1>
-                        Je crée des sites et applications web modernes et accessibles.
-                    </h1>
+                    <motion.h1 variants={fadeUp}>
+                        Création de <span className={styles.highlight}>sites</span> et <span className={styles.highlight}>applications web</span> modernes et accessibles.
+                    </motion.h1>
 
-                    <p> j'aide les particuliers, artisans et PME à concrétiser leurs projets et développer leur présence en ligne avec des solutions modernes et sur mesure</p>
+                    <motion.p variants={fadeUp}>
+                        J'aide les particuliers, artisans et PME à concrétiser leurs projets et développer leur présence en ligne avec des solutions modernes et sur mesure.
+                    </motion.p>
 
-                    <div className={styles.actions}>
-                        {/* Buttons */}
-                    </div>
+                    <motion.div className={styles.actions}>
+                        <Button variant="primary">
+                            Me contacter
+                        </Button>
+
+                        <Button variant="secondary">
+                            Voir mes projets
+                        </Button>
+                    </motion.div>
                 </div>
-
-                <div className={styles.visual}>
-                    {/* Gradient / mockup */}
-                </div>
-            </div>
+            </motion.div>
         </Section>
     )
 }
