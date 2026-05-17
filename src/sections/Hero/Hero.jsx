@@ -10,7 +10,7 @@ import styles from "./Hero.module.scss";
 
 export default function Hero() {
     return (
-        <Section>
+        <Section id="hero">
             <motion.div 
                 className={styles.hero}
                 variants={staggerContainer}
