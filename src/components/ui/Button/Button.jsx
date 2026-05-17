@@ -9,7 +9,7 @@ export default function Button({
 
     if (href) {
         return (
-            <a href={href} className={className}>
+            <a href={href} className={className} aria-label={children}>
                 {children}
             </a>
         );

@@ -29,6 +29,7 @@ export default function ProjectCard({
                 src={image}
                 alt={title}
                 className={styles.image}
+                loading="lazy"
             />
         </a>
 
@@ -36,7 +37,7 @@ export default function ProjectCard({
             <div className={styles.header}>
                 <h3>{title}</h3>
 
-                <ArrowUpRight size={20} />
+                
                 </div>
 
                 <p>{description}</p>
@@ -47,6 +48,10 @@ export default function ProjectCard({
                     {tag}
                     </span>
                 ))}
+                </div>
+                <div className={styles.projectLink}>
+                    <a href="/">Voir le projet</a>
+                    <ArrowUpRight size={20} />
                 </div>
             </div>
         </motion.article>
