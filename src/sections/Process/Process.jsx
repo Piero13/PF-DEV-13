@@ -15,9 +15,9 @@ import styles from "./Process.module.scss";
 
 const steps = [
     {
-    icon: MessageCircle,
-    title: "Échange",
-    text: "Compréhension de vos besoins et définition des objectifs.",
+        icon: MessageCircle,
+        title: "Échange",
+        text: "Compréhension de vos besoins et définition des objectifs.",
     },
 
     {
@@ -39,7 +39,7 @@ const steps = [
     },
 ];
 
-function Process() {
+export default function Process() {
     return (
         <Section id="process">
             <SectionTitle
@@ -75,5 +75,3 @@ function Process() {
         </Section>
     );
 }
-
-export default Process;
