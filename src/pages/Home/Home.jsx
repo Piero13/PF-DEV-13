@@ -1,6 +1,7 @@
 import Hero from "../../sections/Hero/Hero";
 import Services from "../../sections/Services/Services";
 import Projects from "../../sections/Projects/Projects";
+import About from "../../sections/About/About";
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
             <Hero />
             <Services />
             <Projects />
+            <About />
         </>
     )
 }
