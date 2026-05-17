@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Container from "../../ui/Container/Container";
 import styles from "./Navbar.module.scss";
+import logo from "../../../assets/images/Logo.png"
 
 export default function Navbar() {
     return (
@@ -8,7 +9,8 @@ export default function Navbar() {
             <Container>
                 <div className={styles.content}>
                     <NavLink to="/" className={styles.logo}>
-                        PF DEV 13
+                        <img src={logo} alt="logo développeur web" />
+                        <p>PF DEV 13</p>
                     </NavLink>
 
                     <nav className={styles.nav}>

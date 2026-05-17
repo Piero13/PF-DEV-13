@@ -15,9 +15,16 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-family: "Sora", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.logo img {
+  height: 2.5rem;
+  margin-right: 1rem;
 }
 
 .nav {
