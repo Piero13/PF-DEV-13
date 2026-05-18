@@ -4,6 +4,7 @@ export default function Button({
     children,
     variant = "primary",
     href,
+    type = "button",
 }) {
     const className = `${styles.button} ${styles[variant]}`;
 
@@ -16,7 +17,7 @@ export default function Button({
     }
 
     return (
-        <button className={className}>
+        <button className={className} aria-label={children} type={type}>
             {children}
         </button>
     )

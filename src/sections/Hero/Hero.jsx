@@ -36,11 +36,11 @@ export default function Hero() {
                     </motion.p>
 
                     <motion.div className={styles.actions}>
-                        <Button variant="primary">
+                        <Button variant="primary" href="/contact">
                             Me contacter
                         </Button>
 
-                        <Button variant="secondary">
+                        <Button variant="secondary" href="/projects">
                             Voir mes projets
                         </Button>
                     </motion.div>

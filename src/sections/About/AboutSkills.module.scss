@@ -1,0 +1,36 @@
+.card {
+    height: 200px;
+    padding: 2rem;
+    background: #111827;
+    border: 1px solid #243041;
+    border-radius: 28px;
+
+    transition: transform 250ms cubic-bezier(0.22, 1, 0.36, 1), border-color 250ms cubic-bezier(0.22, 1, 0.36, 1);
+
+    &:hover {
+        border-color: rgba(99, 102, 241, 0.4);
+        box-shadow: 2px 2px 3px #243041;
+    }
+}
+
+.card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 968px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

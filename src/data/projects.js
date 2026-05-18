@@ -8,7 +8,7 @@ export const projects = [
     id: "wedding-app",
     icon: "icon",
     title: "Plateforme digitale de mariage",
-    description: "Application web élégante permettant aux invités de consulter les informations de l’événement, confirmer leur حضور et profiter d’une expérience fluide sur tous les appareils.",
+    description: "Application web élégante permettant aux invités de consulter les informations de l’événement, accéder aux photos et profiter d’une expérience fluide sur tous les appareils.",
     image: weddingApp,
     tags: ["React", "Bootstrap", "Responsive Design"],
     link: "https://mariage-pierre-alexa.netlify.app/",
