@@ -8,8 +8,10 @@ function ProjectCard({
   title,
   category,
   description,
+  longDescription,
   image,
   tags,
+  stacks,
   year,
   link,
 }) {
@@ -55,6 +57,17 @@ function ProjectCard({
           {tags.map((tag) => (
             <span key={tag}>
               {tag}
+            </span>
+          ))}
+        </div>
+
+        <p>{longDescription}</p>
+
+        <div className={styles.stacks}>
+          <p>Stack : </p>
+          {stacks.map((stack, index) => (
+            <span key={index}>
+              {stack}
             </span>
           ))}
         </div>

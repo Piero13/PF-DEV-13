@@ -22,9 +22,11 @@ export default function Projects() {
                     key={project.id}
                     icon={project.icon}
                     title={project.title}
+                    category={project.category}
                     description={project.description}
                     image={project.image}
                     tags={project.tags}
+                    year={project.year}
                     link={project.link}
                 />
                 ))}

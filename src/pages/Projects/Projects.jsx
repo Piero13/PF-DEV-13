@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
-
-import ProjectsSection from "../../sections/projects/Projects";
+import ProjectsHero from "../../sections/Projects/ProjectsHero";
+import ProjectsGrid from "../../sections/Projects/ProjectsGrid";
 
 function Projects() {
   return (
@@ -16,7 +16,9 @@ function Projects() {
         />
       </Helmet>
 
-      <ProjectsSection />
+      <ProjectsHero />
+
+      <ProjectsGrid />
     </>
   );
 }
