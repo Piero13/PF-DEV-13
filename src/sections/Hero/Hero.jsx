@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import Section from "../../components/ui/Section/Section";
+import HeroSection from "../../components/ui/Section/HeroSection";
 import Button from "../../components/ui/Button/Button"
 
 import { fadeUp } from "../../animations/fade";
@@ -10,7 +10,7 @@ import styles from "./Hero.module.scss";
 
 export default function Hero() {
     return (
-        <Section id="hero">
+        <HeroSection id="hero">
             <motion.div 
                 className={styles.hero}
                 variants={staggerContainer}
@@ -46,6 +46,6 @@ export default function Hero() {
                     </motion.div>
                 </div>
             </motion.div>
-        </Section>
+        </HeroSection>
     )
 }
