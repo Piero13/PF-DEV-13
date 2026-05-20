@@ -1,13 +1,9 @@
 import { useRef, useState, useEffect } from "react";
-
 import emailjs from "@emailjs/browser";
-
 import { motion, AnimatePresence } from "framer-motion";
 
 import Button from "../../ui/Button/Button";
 import Input from "../../ui/Input/Input";
-
-
 import { fadeUp } from "../../../animations/fade";
 
 import styles from "./ContactForm.module.scss";
@@ -15,6 +11,7 @@ import styles from "./ContactForm.module.scss";
 export default function ContactForm() {
     const form = useRef();
     const timeoutRef = useRef(null);
+    
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);

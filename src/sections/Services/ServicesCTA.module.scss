@@ -1,0 +1,30 @@
+.cta {
+  padding: 4rem;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(99, 102, 241, 0.18),
+      transparent 60%
+    ),
+    #111827;
+  border: 1px solid #243041;
+  border-radius: 32px;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.cta p {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

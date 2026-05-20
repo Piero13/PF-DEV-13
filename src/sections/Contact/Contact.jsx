@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import Section from "../../components/ui/Section/Section";
-import Button from "../../components/ui/Button/Button";
+import SectionCTA from "../../components/shared/SectionCTA/SectionCTA";
 import SectionTitle from "../../components/shared/SectionTitle/SectionTitle";
 
 import { fadeUp } from "../../animations/fade";
@@ -24,11 +24,7 @@ export default function Contact() {
                     text="Vous avez une idée, un besoin ou un projet en tête ? Échangeons ensemble."
                 />
 
-                <div className={styles.button}>
-                    <Button variant="primary">
-                        Me contacter
-                    </Button>
-                </div>
+                <SectionCTA link="/contact" text="Me contacter" />
                 
             </motion.div>
         </Section>

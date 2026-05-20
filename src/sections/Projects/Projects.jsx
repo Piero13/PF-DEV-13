@@ -2,12 +2,15 @@ import Section from "../../components/ui/Section/Section";
 
 import SectionTitle from "../../components/shared/SectionTitle/SectionTitle";
 import ProjectCard from "../../components/shared/ProjectCard/ProjectCard";
+import SectionCTA from "../../components/shared/SectionCTA/SectionCTA";
 
 import { projects } from "../../data/projects";
 
 import styles from "./Projects.module.scss";
 
 export default function Projects() {
+    const projectsSelection = [projects[0], projects[1]]
+
     return (
         <Section id="projects">
             <SectionTitle
@@ -17,7 +20,7 @@ export default function Projects() {
             />
 
             <div className={styles.grid}>
-                {projects.map((project) => (
+                {projectsSelection.map((project) => (
                 <ProjectCard
                     key={project.id}
                     icon={project.icon}
@@ -31,6 +34,8 @@ export default function Projects() {
                 />
                 ))}
             </div>
+
+            <SectionCTA link="/projects" text="Tous les projets" />
         </Section>
     );
 }

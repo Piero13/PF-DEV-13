@@ -3,6 +3,7 @@ import { services } from "../../data/services."
 import Section from "../../components/ui/Section/Section";
 import SectionTitle from "../../components/shared/SectionTitle/SectionTitle";
 import ServiceCard from "../../components/shared/ServiceCard/ServiceCard";
+import SectionCTA from "../../components/shared/SectionCTA/SectionCTA"
 
 import styles from "./Services.module.scss";
 
@@ -29,6 +30,8 @@ export default function Services() {
                     )
                 })}
             </div>
+            
+            <SectionCTA link="/services" text="En savoir plus" />
         </Section>
     );
 }

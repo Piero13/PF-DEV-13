@@ -1,5 +1,7 @@
 import styles from "./Button.module.scss";
 
+import { NavLink } from "react-router-dom";
+
 export default function Button({
     children,
     variant = "primary",
@@ -10,9 +12,9 @@ export default function Button({
 
     if (href) {
         return (
-            <a href={href} className={className} aria-label={children}>
+            <NavLink to={href} className={className} aria-label={children}>
                 {children}
-            </a>
+            </NavLink>
         );
     }
 
