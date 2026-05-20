@@ -47,6 +47,10 @@ export default function Navbar() {
                             Accueil
                         </NavLink>
 
+                        <NavLink to="/services" className={({ isActive }) => isActive ? styles.active : undefined}>
+                            Services
+                        </NavLink>
+
                         <NavLink to="/projects" className={({ isActive }) => isActive ? styles.active : undefined}>
                             Projets
                         </NavLink>

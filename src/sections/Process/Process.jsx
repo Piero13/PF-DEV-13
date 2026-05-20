@@ -60,6 +60,7 @@ export default function Process() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
+                        whileHover={{ y: -6 }}
                     >
                         <div className={styles.icon}>
                             <Icon size={28} />

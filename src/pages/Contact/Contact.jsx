@@ -12,7 +12,7 @@ export default function Contact() {
         <>
             <Helmet>
                 <title>
-                Contact | Développeur Web Freelance
+                    Contact | Pierre Fasce | Développeur web | Sites modernes et accessibles
                 </title>
 
                 <meta

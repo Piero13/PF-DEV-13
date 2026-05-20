@@ -1,6 +1,5 @@
 .footer {
   padding: 5rem 0 2rem;
-
   border-top: 1px solid #243041;
 }
 
@@ -22,9 +21,15 @@
 .links {
   display: flex;
   gap: 2rem;
+  font-size: 2rem;
+
+  & a {
+    transition: all ease-in-out 300ms;
+  }
 
   & a:hover {
     color: #94a3b8;
+    transform: translateY(-3px);
   }
 }
 

@@ -1,13 +1,14 @@
 import { Helmet } from "react-helmet-async";
 import ProjectsHero from "../../sections/Projects/ProjectsHero";
 import ProjectsGrid from "../../sections/Projects/ProjectsGrid";
+import ProjectsCTA from "../../sections/Projects/ProjectsCTA"
 
-function Projects() {
+export default function Projects() {
   return (
     <>
       <Helmet>
         <title>
-          Projets | Développeur Web Freelance
+          Projets | Pierre Fasce | Développeur web | Sites modernes et accessibles
         </title>
 
         <meta
@@ -19,8 +20,8 @@ function Projects() {
       <ProjectsHero />
 
       <ProjectsGrid />
+
+      <ProjectsCTA />
     </>
   );
 }
-
-export default Projects;

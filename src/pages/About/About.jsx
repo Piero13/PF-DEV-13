@@ -11,7 +11,7 @@ export default function About() {
     <>
       <Helmet>
         <title>
-          À propos | Développeur Web Freelance
+          À propos | Pierre Fasce | Développeur web | Sites modernes et accessibles
         </title>
 
         <meta
