@@ -1,21 +1,16 @@
-import { Helmet } from "react-helmet-async";
 import ProjectsHero from "../../sections/Projects/ProjectsHero";
 import ProjectsGrid from "../../sections/Projects/ProjectsGrid";
-import ProjectsCTA from "../../sections/Projects/ProjectsCTA"
+import ProjectsCTA from "../../sections/Projects/ProjectsCTA";
+import Seo from "../../components/shared/SEO/Seo";
 
 export default function Projects() {
   return (
     <>
-      <Helmet>
-        <title>
-          Projets | Pierre Fasce | Développeur web | Sites modernes et accessibles
-        </title>
-
-        <meta
-          name="description"
-          content="Découvrez une sélection de projets web modernes, responsive et optimisés."
-        />
-      </Helmet>
+      <Seo 
+        title="Projets"
+        description="Découvrez une sélection de projets web modernes, responsive et optimisés."
+        url="https://pfdev13.netlify.app"
+      />
 
       <ProjectsHero />
 

@@ -1,24 +1,19 @@
-import { Helmet } from "react-helmet-async";
 import ServicesHero from "../../sections/Services/ServicesHero";
 import ServicesDetailed from "../../sections/Services/ServicesDetailed";
 import Workflow from "../../sections/Services/Workflow";
 import WhyWorkWithMe from "../../sections/Services/WhyWorkWithMe";
 import ServicesFAQ from "../../sections/Services/ServicesFAQ";
 import ServicesCTA from "../../sections/Services/ServicesCTA";
+import Seo from "../../components/shared/SEO/Seo";
 
 export default function Services() {
     return (
         <>
-            <Helmet>
-                <title>
-                    Services | Pierre Fasce | Développeur web | Sites modernes et accessibles
-                </title>
-
-                <meta
-                    name="description"
-                    content="Création de sites web modernes, responsive et optimisés pour les particuliers, indépendants, artisans et petites entreprises."
-                />
-            </Helmet>
+            <Seo 
+                title="Services"
+                description="Création de sites web modernes, responsive et optimisés pour les particuliers, indépendants, artisans et petites entreprises."
+                url="https://pfdev13.netlify.app"
+            />
 
             <ServicesHero />
 
