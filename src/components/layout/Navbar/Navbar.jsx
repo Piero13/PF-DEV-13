@@ -100,6 +100,15 @@ export default function Navbar() {
                 </NavLink>
 
                 <NavLink
+                    to="/services"
+                    onClick={() =>
+                    setMenuOpen(false)
+                    }
+                >
+                    Services
+                </NavLink>
+
+                <NavLink
                     to="/projects"
                     onClick={() =>
                     setMenuOpen(false)
