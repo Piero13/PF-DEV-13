@@ -1,12 +1,28 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createBrowserRouter } from "react-router-dom";
+import { lazy } from "react";
 
 import App from "../App";
 
-import Home from "../pages/Home/Home";
-import Services from "../pages/Services/Services";
-import Projects from "../pages/Projects/Projects";
-import About from "../pages/About/About";
-import Contact from "../pages/Contact/Contact";
+const Home = lazy(() =>
+  import("../pages/Home/Home")
+);
+
+const About = lazy(() =>
+  import("../pages/About/About")
+);
+
+const Projects = lazy(() =>
+  import("../pages/Projects/Projects")
+);
+
+const Services = lazy(() =>
+  import("../pages/Services/Services")
+);
+
+const Contact = lazy(() =>
+  import("../pages/Contact/Contact")
+);
 
 const router = createBrowserRouter([
   {
