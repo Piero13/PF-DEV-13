@@ -9,7 +9,7 @@ export default function Projects() {
       <Seo 
         title="Projets"
         description="Découvrez une sélection de projets web modernes, responsive et optimisés."
-        url="https://pfdev13.netlify.app"
+        url="https://pfdev13.netlify.app/projects"
       />
 
       <ProjectsHero />

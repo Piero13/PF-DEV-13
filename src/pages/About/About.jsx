@@ -11,7 +11,7 @@ export default function About() {
       <Seo 
         title="À propos"
         description="Découvrez mon approche du développement web moderne"
-        url="https://pfdev13.netlify.app"
+        url="https://pfdev13.netlify.app/about"
       />
 
       <AboutIntro />

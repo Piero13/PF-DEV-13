@@ -12,7 +12,7 @@ export default function Contact() {
             <Seo 
                 title="Contact"
                 description="Un projet ? Des questions ? Discutons-en..."
-                url="https://pfdev13.netlify.app"
+                url="https://pfdev13.netlify.app/contact"
             />
 
             <main>

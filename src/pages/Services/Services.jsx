@@ -12,7 +12,7 @@ export default function Services() {
             <Seo 
                 title="Services"
                 description="Création de sites web modernes, responsive et optimisés pour les particuliers, indépendants, artisans et petites entreprises."
-                url="https://pfdev13.netlify.app"
+                url="https://pfdev13.netlify.app/services"
             />
 
             <ServicesHero />
