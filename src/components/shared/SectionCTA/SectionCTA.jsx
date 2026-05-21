@@ -7,6 +7,7 @@ export default function SectionCTA({text, link}) {
             <NavLink
                 to={link}
                 className={styles.button}
+                aria-label={text}
             >
                 {text}
             </NavLink>
