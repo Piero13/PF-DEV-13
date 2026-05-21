@@ -19,21 +19,6 @@ export default function Footer() {
             </div>
 
             <div className={styles.links}>
-                {/* <a href="/#hero">
-                    Accueil
-                </a>
-                <a href="#services">
-                Services
-                </a>
-
-                <a href="#projects">
-                Projets
-                </a>
-
-                <a href="#contact">
-                Contact
-                </a> */}
-
                 <a href="https://www.facebook.com/PierreFasce/" aria-label="Liens vers le Facebook de Pierre Fasce" title="Facebook" target="_blank">
                     <FaFacebook />
                 </a>

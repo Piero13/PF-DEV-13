@@ -11,9 +11,7 @@
 
 .content h1 {
   font-size: clamp(3rem, 6vw, 5rem);
-
   line-height: 1.05;
-
   margin: 1.5rem 0;
 }
 
@@ -21,9 +19,7 @@
   max-width: 800px;
   margin-bottom: 1.5rem;
   align-self: flex-start;
-
   color: #94a3b8;
-
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -36,15 +32,10 @@
   display: inline-flex;
   align-self: flex-start;
   width: fit-content;
-
   padding: 0.5rem 0.8rem;
-
   border-radius: 999px;
-
   background: rgba(99, 102, 241, 0.1);
-
   color: #a5b4fc;
-
   border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
@@ -66,5 +57,13 @@
 
   .content p {
     margin: 0 auto;
+  }
+
+  .content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .actions a {
+    margin-top: 2rem;
   }
 }

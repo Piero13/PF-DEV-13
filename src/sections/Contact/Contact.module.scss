@@ -13,3 +13,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .card {
+        padding: 2rem;
+    }
+}
