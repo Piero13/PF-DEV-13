@@ -114,16 +114,7 @@ export default function ContactForm() {
                         className={styles.honeypot}
                     />
 
-                    <div className={styles.button}>
-                        <Button variant="primary" type="submit">
-                            {loading
-                            ? "Envoi..."
-                            : "Envoyer le message"}
-                        </Button>
-                    </div>
-                    
-
-                    <AnimatePresence mode="wait">
+                                        <AnimatePresence mode="wait">
                         {success && (
                             <motion.p
                             className={styles.success}
@@ -163,7 +154,18 @@ export default function ContactForm() {
                             Une erreur est survenue.
                             </motion.p>
                         )}
-                    </AnimatePresence>               
+                    </AnimatePresence> 
+
+                    <div className={styles.button}>
+                        <Button variant="primary" type="submit">
+                            {loading
+                            ? "Envoi..."
+                            : "Envoyer le message"}
+                        </Button>
+                    </div>
+                    
+
+              
                 </form>
             </motion.div>
         </div>
