@@ -1,21 +1,14 @@
-import { motion } from "framer-motion";
-
 import HeroSection from "../../components/ui/Section/HeroSection";
 import Button from "../../components/ui/Button/Button"
 
-import { staggerContainer } from "../../animations/stagger";
 
 import styles from "./Hero.module.scss";
 
 export default function Hero() {
     return (
         <HeroSection id="hero">
-            <motion.div 
+            <div 
                 className={styles.hero}
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
             >
                 <div className={styles.content}>
                     <span 
@@ -43,7 +36,7 @@ export default function Hero() {
                         </Button>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </HeroSection>
     )
 }

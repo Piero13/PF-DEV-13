@@ -3,10 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
 
 import App from "../App";
-
-const Home = lazy(() =>
-  import("../pages/Home/Home")
-);
+import Home from "../pages/Home/Home";
 
 const About = lazy(() =>
   import("../pages/About/About")
