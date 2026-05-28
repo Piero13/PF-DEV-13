@@ -114,7 +114,7 @@ export default function ContactForm() {
                         className={styles.honeypot}
                     />
 
-                                        <AnimatePresence mode="wait">
+                    <AnimatePresence mode="wait">
                         {success && (
                             <motion.p
                             className={styles.success}
