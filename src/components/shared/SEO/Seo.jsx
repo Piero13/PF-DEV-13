@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet-async";
+import ogImage from "../../../../public/og-image.jpg"
 
 function Seo({
   title,
   description,
-  image = "/og-image.jpg",
+  image = {ogImage},
   url = "https://pfdev13.netlify.app",
 }) {
   const siteTitle =
