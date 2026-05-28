@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import ogImage from "../../../../public/og-image.jpg"
+import ogImage from "../../../../public/og_image.jpg"
 
 function Seo({
   title,
