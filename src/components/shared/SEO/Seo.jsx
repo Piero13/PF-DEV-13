@@ -47,7 +47,7 @@ function Seo({
 
       <meta
         property="og:image"
-        content={`https://pfdev13.netlify.app${image}`}
+        content={image}
       />
 
       {/* Twitter */}
