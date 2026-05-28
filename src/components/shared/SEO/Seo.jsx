@@ -1,10 +1,9 @@
 import { Helmet } from "react-helmet-async";
-import OgImage from "/PFDEV13_opengraph.webp"
 
 function Seo({
   title,
   description,
-  image = OgImage,
+  image = "/og-image.jpg",
   url = "https://pfdev13.netlify.app",
 }) {
   const siteTitle =
@@ -47,7 +46,7 @@ function Seo({
 
       <meta
         property="og:image"
-        content={image}
+        content={`https://pfdev13.netlify.app${image}`}
       />
 
       {/* Twitter */}
@@ -69,6 +68,12 @@ function Seo({
       <meta
         name="twitter:image"
         content={image}
+      />
+
+      {/* Canonical */}
+      <link
+        rel="canonical"
+        href={url}
       />
     </Helmet>
   );
