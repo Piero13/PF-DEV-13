@@ -17,8 +17,7 @@ export default function PriceList() {
                     className={styles.downloadBtn}
                     href="/public/pfdev13_brochure_2026.pdf"
                     variant="primary"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    download
                 >
                     <FileDown size={35} className={styles.btnIcon}/>
                         <div>
