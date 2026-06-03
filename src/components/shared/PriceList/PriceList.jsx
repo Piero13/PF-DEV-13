@@ -15,7 +15,7 @@ export default function PriceList() {
             <div className={styles.btnDisplay}>
                 <a
                     className={styles.downloadBtn}
-                    href="/public/pfdev13_brochure_2026.pdf"
+                    href="/pfdev13_brochure_2026.pdf"
                     variant="primary"
                     download
                 >
