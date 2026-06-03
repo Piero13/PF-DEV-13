@@ -31,28 +31,28 @@ const faq = [
 function ServicesFAQ() {
     return (
         <Section>
-        <div className={styles.faq}>
-            <span className={styles.eyebrow}>
-            FAQ
-            </span>
+            <div className={styles.faq}>
+                <span className={styles.eyebrow}>
+                    FAQ
+                </span>
 
-            <h2>
-            Questions fréquentes.
-            </h2>
+                <h2>
+                    Questions fréquentes.
+                </h2>
 
-            <div className={styles.faqList}>
-            {faq.map((item) => (
-                <article
-                key={item.question}
-                className={styles.faqItem}
-                >
-                    <h3>{item.question}</h3>
+                <div className={styles.faqList}>
+                {faq.map((item) => (
+                    <article
+                        key={item.question}
+                        className={styles.faqItem}
+                    >
+                        <h3>{item.question}</h3>
 
-                    <p>{item.answer}</p>
-                </article>
-            ))}
+                        <p>{item.answer}</p>
+                    </article>
+                ))}
+                </div>
             </div>
-        </div>
         </Section>
     );
 }
