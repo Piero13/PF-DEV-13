@@ -21,7 +21,7 @@ export default function PriceList() {
                 >
                     <FileDown size={35} className={styles.btnIcon}/>
                         <div>
-                            <p>Télécharger La brochure</p>
+                            <p>Télécharger la brochure</p>
                             <p>(PDF - 341 Ko)</p>
                         </div>
                 </a>
