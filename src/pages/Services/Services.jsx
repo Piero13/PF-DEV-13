@@ -5,30 +5,30 @@ import WhyWorkWithMe from "../../sections/Services/WhyWorkWithMe";
 import ServicesFAQ from "../../sections/Services/ServicesFAQ";
 import PriceList from "../../components/shared/PriceList/PriceList";
 import ServicesCTA from "../../sections/Services/ServicesCTA";
-import Seo from "../../components/shared/SEO/Seo";
+import Seo from "../../components/shared/test/Seo";
 
 export default function Services() {
-    return (
-        <>
-            <Seo 
-                title="Services"
-                description="Création de sites web modernes, responsive et optimisés pour les particuliers, indépendants, artisans et petites entreprises."
-                url="https://pfdev13.netlify.app/services"
-            />
+  return (
+    <>
+      <Seo
+        title="Services"
+        description="Création de sites web modernes, responsive et optimisés pour les particuliers, indépendants, artisans et petites entreprises."
+        url="https://pfdev13.netlify.app/services"
+      />
 
-            <ServicesHero />
+      <ServicesHero />
 
-            <ServicesDetailed />
+      <ServicesDetailed />
 
-            <Workflow />
+      <Workflow />
 
-            <WhyWorkWithMe />
+      <WhyWorkWithMe />
 
-            <ServicesFAQ />
+      <ServicesFAQ />
 
-            <PriceList />
+      <PriceList />
 
-            <ServicesCTA />
-        </>
-    );
+      <ServicesCTA />
+    </>
+  );
 }
