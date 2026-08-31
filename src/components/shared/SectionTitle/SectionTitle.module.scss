@@ -36,3 +36,9 @@
 
   line-height: 1.7;
 }
+
+@media (max-width: 576px) {
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+}
