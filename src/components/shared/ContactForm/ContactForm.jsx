@@ -9,165 +9,156 @@ import { fadeUp } from "../../../animations/fade";
 import styles from "./ContactForm.module.scss";
 
 export default function ContactForm() {
-    const form = useRef();
-    const timeoutRef = useRef(null);
-    
-    const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState(false);
-    const [error, setError] = useState(false);
+  const form = useRef();
+  const timeoutRef = useRef(null);
 
-    const sendEmail = async (e) => {
-        e.preventDefault();
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
-        try {
-            setLoading(true);
-            setError(false);
-            setSuccess(false);
+  const sendEmail = async (e) => {
+    e.preventDefault();
 
-            await emailjs.sendForm(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                form.current,
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-            );
+    try {
+      setLoading(true);
+      setError(false);
+      setSuccess(false);
 
-            setSuccess(true);
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      );
 
-            form.current.reset();
-        } catch (error) {
-            console.error(error);
-            setError(true);
-        } finally {
-            setLoading(false);
-        }
-    };
+      setSuccess(true);
 
-    useEffect(() => {
-        if (success) {
-            timeoutRef.current = setTimeout(() => {
-            setSuccess(false);
-            }, 5000);
-        }
+      form.current.reset();
+    } catch (error) {
+      console.error(error);
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-        return () => clearTimeout(timeoutRef.current);
-    }, [success]);
+  useEffect(() => {
+    if (success) {
+      timeoutRef.current = setTimeout(() => {
+        setSuccess(false);
+      }, 5000);
+    }
 
-    useEffect(() => {
-        if (error) {
-            timeoutRef.current = setTimeout(() => {
-            setError(false);
-            }, 5000);
-        }
+    return () => clearTimeout(timeoutRef.current);
+  }, [success]);
 
-        return () => clearTimeout(timeoutRef.current);
-    }, [error]);
+  useEffect(() => {
+    if (error) {
+      timeoutRef.current = setTimeout(() => {
+        setError(false);
+      }, 5000);
+    }
 
-    return (
-        <div>
-            <motion.div
-                className={styles.card}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-            >
-                <form
-                    ref={form}
-                    onSubmit={sendEmail}
-                    className={styles.form}
-                >
-                    <Input
-                        label="Nom"
-                        name="user_name"
-                        placeholder="Votre nom"
-                        required
-                    />
+    return () => clearTimeout(timeoutRef.current);
+  }, [error]);
 
-                    <Input
-                        label="Email"
-                        type="email"
-                        name="user_email"
-                        placeholder="Votre email"
-                        required
-                    />
+  return (
+    <div>
+      <motion.div
+        className={styles.card}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <form ref={form} onSubmit={sendEmail} className={styles.form}>
+          <Input
+            label="Nom"
+            name="user_name"
+            placeholder="Votre nom"
+            required
+          />
 
-                    <Input
-                        label="Subject"
-                        name="subject"
-                        placeholder="Objet du message"
-                        required
-                    />
+          <Input
+            label="Email"
+            type="email"
+            name="user_email"
+            placeholder="Votre email"
+            required
+          />
 
-                    <Input
-                        label="Message"
-                        name="message"
-                        placeholder="Parlez-moi de votre projet..."
-                        textarea
-                        required
-                    />
+          <Input
+            label="Subject"
+            name="subject"
+            placeholder="Objet du message"
+            required
+          />
 
-                    <input
-                        type="text"
-                        name="honeypot"
-                        tabIndex="-1"
-                        autoComplete="off"
-                        className={styles.honeypot}
-                    />
+          <Input
+            label="Message"
+            name="message"
+            placeholder="Parlez-moi de votre projet..."
+            textarea
+            required
+          />
 
-                    <AnimatePresence mode="wait">
-                        {success && (
-                            <motion.p
-                            className={styles.success}
-                            initial={{
-                                opacity: 0,
-                                y: 10,
-                            }}
-                            animate={{
-                                opacity: 1,
-                                y: 0,
-                            }}
-                            exit={{
-                                opacity: 0,
-                                y: -10,
-                            }}
-                            >
-                            Message envoyé avec succès.
-                            </motion.p>
-                        )}
+          <input
+            type="text"
+            name="honeypot"
+            tabIndex="-1"
+            autoComplete="off"
+            className={styles.honeypot}
+          />
 
-                        {error && (
-                            <motion.p
-                            className={styles.error}
-                            initial={{
-                                opacity: 0,
-                                y: 10,
-                            }}
-                            animate={{
-                                opacity: 1,
-                                y: 0,
-                            }}
-                            exit={{
-                                opacity: 0,
-                                y: -10,
-                            }}
-                            >
-                            Une erreur est survenue.
-                            </motion.p>
-                        )}
-                    </AnimatePresence> 
+          <AnimatePresence mode="wait">
+            {success && (
+              <motion.p
+                className={styles.success}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                  y: -10,
+                }}
+              >
+                Message envoyé avec succès.
+              </motion.p>
+            )}
 
-                    <div className={styles.button}>
-                        <Button variant="primary" type="submit">
-                            {loading
-                            ? "Envoi..."
-                            : "Envoyer le message"}
-                        </Button>
-                    </div>
-                    
+            {error && (
+              <motion.p
+                className={styles.error}
+                initial={{
+                  opacity: 0,
+                  y: 10,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                  y: -10,
+                }}
+              >
+                Une erreur est survenue.
+              </motion.p>
+            )}
+          </AnimatePresence>
 
-              
-                </form>
-            </motion.div>
-        </div>
-    );
+          <div className={styles.button}>
+            <Button className={styles.primary} type="submit">
+              {loading ? "Envoi..." : "Envoyer le message"}
+            </Button>
+          </div>
+        </form>
+      </motion.div>
+    </div>
+  );
 }

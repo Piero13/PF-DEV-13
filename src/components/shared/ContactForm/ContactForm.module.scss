@@ -15,6 +15,10 @@
   margin: 0 auto;
 }
 
+button {
+  border: none !important;
+}
+
 .success {
   color: #22c55e;
   text-align: center;
@@ -26,7 +30,7 @@
 }
 
 .button {
-    align-self: center;
+  align-self: center;
 }
 
 .honeypot {
