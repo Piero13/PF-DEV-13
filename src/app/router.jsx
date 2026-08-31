@@ -5,21 +5,19 @@ import { lazy } from "react";
 import App from "../App";
 import Home from "../pages/Home/Home";
 
-const About = lazy(() =>
-  import("../pages/About/About")
-);
+const About = lazy(() => import("../pages/About/About"));
 
-const Projects = lazy(() =>
-  import("../pages/Projects/Projects")
-);
+const Projects = lazy(() => import("../pages/Projects/Projects"));
 
-const Services = lazy(() =>
-  import("../pages/Services/Services")
-);
+const Services = lazy(() => import("../pages/Services/Services"));
 
-const Contact = lazy(() =>
-  import("../pages/Contact/Contact")
-);
+const Contact = lazy(() => import("../pages/Contact/Contact"));
+
+const Policy = lazy(() => import("../pages/Policy/Policy"));
+
+const Terms = lazy(() => import("../pages/Terms/Terms"));
+
+const Legal = lazy(() => import("../pages/Legal/Legal"));
 
 const router = createBrowserRouter([
   {
@@ -45,6 +43,18 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "policy",
+        element: <Policy />,
+      },
+      {
+        path: "terms",
+        element: <Terms />,
+      },
+      {
+        path: "legal",
+        element: <Legal />,
       },
     ],
   },
