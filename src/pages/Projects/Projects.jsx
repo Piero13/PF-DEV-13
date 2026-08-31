@@ -1,7 +1,7 @@
 import ProjectsHero from "../../sections/Projects/ProjectsHero";
 import ProjectsGrid from "../../sections/Projects/ProjectsGrid";
 import ProjectsCTA from "../../sections/Projects/ProjectsCTA";
-import Seo from "../../components/shared/test/Seo";
+import Seo from "../../components/shared/Seo/Seo";
 
 export default function Projects() {
   return (

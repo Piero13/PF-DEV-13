@@ -3,7 +3,7 @@ import AboutVision from "../../sections/About/AboutVision";
 import AboutSkills from "../../sections/About/AboutSkills";
 import AboutValues from "../../sections/About/AboutValues";
 import ContactCTA from "../../sections/Contact/ContactCTA";
-import Seo from "../../components/shared/test/Seo";
+import Seo from "../../components/shared/Seo/Seo";
 
 export default function About() {
   return (

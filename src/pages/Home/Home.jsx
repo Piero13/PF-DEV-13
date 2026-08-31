@@ -4,7 +4,7 @@ import Projects from "../../sections/Projects/Projects";
 import About from "../../sections/About/About";
 import Process from "../../sections/Process/Process";
 import Contact from "../../sections/Contact/Contact";
-import Seo from "../../components/shared/test/Seo";
+import Seo from "../../components/shared/Seo/Seo";
 
 export default function Home() {
   return (

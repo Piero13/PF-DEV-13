@@ -5,7 +5,7 @@ import WhyWorkWithMe from "../../sections/Services/WhyWorkWithMe";
 import ServicesFAQ from "../../sections/Services/ServicesFAQ";
 import PriceList from "../../components/shared/PriceList/PriceList";
 import ServicesCTA from "../../sections/Services/ServicesCTA";
-import Seo from "../../components/shared/test/Seo";
+import Seo from "../../components/shared/Seo/Seo";
 
 export default function Services() {
   return (

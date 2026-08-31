@@ -4,7 +4,7 @@ import Section from "../../components/ui/Section/Section";
 import SectionTitle from "../../components/shared/SectionTitle/SectionTitle";
 import LegalBlock from "../../components/shared/LegalBlock/LegalBlock";
 
-import Seo from "../../components/shared/test/Seo";
+import Seo from "../../components/shared/Seo/Seo";
 
 export default function Terms() {
   return (
