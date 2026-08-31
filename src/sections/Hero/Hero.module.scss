@@ -48,6 +48,15 @@
   margin-right: 0.5rem;
 }
 
+.actions {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive */
 @media (max-width: 968px) {
   .hero {
@@ -64,6 +73,12 @@
   }
 
   .actions a {
-    margin-top: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .actions {
+    flex-direction: column;
   }
 }
