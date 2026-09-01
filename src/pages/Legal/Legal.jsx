@@ -36,6 +36,8 @@ export default function Legal() {
             Email :{" "}
             <a href="mailto:pf.devweb13@gmail.com">pf.devweb13@gmail.com</a>
           </p>
+
+          <p>Adresse : 81 Bd Pinatel, 13012 Marseille, France.</p>
         </LegalBlock>
 
         <LegalBlock title="2. Hébergement">
