@@ -30,7 +30,7 @@ export default function Legal() {
 
           <p>Fasce Pierre</p>
 
-          <p>SIRET : XXXXXXXX</p>
+          <p>SIRET : 890.857.287.00027</p>
 
           <p>
             Email :{" "}
